@@ -1,0 +1,43 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python environments, caches, tests, and build output
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local database and private RAG inputs/results
+*.db
+*.db-shm
+*.db-wal
+*.sqlite*
+*.dump
+*.backup
+/rag/data/
+/rag/results/
+/rag/experiments/datasets/
+/rag/experiments/results/
+/rag/experiments/runs/
+
+# Logs and editor/OS files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.orig
+*.rej
+.DS_Store
+._*

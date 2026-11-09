@@ -1,0 +1,21 @@
+name: RAG CI
+on:
+  pull_request:
+  push:
+    branches: [main, dev]
+permissions:
+  contents: read
+jobs:
+  rag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run pytest tests
+      - run: uv run ruff check rag tests scripts

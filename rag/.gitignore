@@ -1,0 +1,14 @@
+# Local corpus and extracted source bodies stay out of the public tree.
+/experiments/datasets/
+/experiments/results/
+/experiments/runs/
+
+# Editor metadata and generated Python bytecode.
+**/.DS_Store
+**/__pycache__/
+*.py[cod]
+
+# User-specific evaluation data and source mappings stay local.
+/evaluation/*.json
+!/evaluation/golden_set_synthetic_ranking_v1.json
+/examples/
