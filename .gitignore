@@ -41,3 +41,21 @@ dist/
 *.rej
 .DS_Store
 ._*
+
+# Legacy workspace instructions and service documents stay local.
+/AGENTS.md
+/CLAUDE.md
+/rag/AGENTS.md
+/rag/CLAUDE.md
+/tests/AGENTS.md
+/tests/CLAUDE.md
+/docs/PRD_epic.md
+/docs/PRD_task.md
+/docs/contracts/INTERFACE_FINAL_v1.md
+/.github/ISSUE_TEMPLATE/
+/.github/PULL_REQUEST_TEMPLATE.md
+
+# These local evaluation tests require fixtures excluded from the public tree.
+/tests/test_rag_generic_projection.py
+/tests/test_rag_golden_set.py
+/tests/test_rag_si_reuse_golden.py
