@@ -1,6 +1,6 @@
-# RAG 검색 방식 실험
+# RAG 검색 실험 실행 도구
 
-이 실험 패키지는 기존 `starter-rag`와 별도 설치·실행 경로를 사용합니다. 기본 `SearchPort`, 운영 인덱스, 기존 `starter-rag search` 동작은 변경하지 않습니다.
+이 폴더는 실험 보고서와 재현 도구를 모읍니다. 먼저 [실험 보고서](EXPERIMENT_REPORT.md), [집계 결과와 한계](RESULTS.md), [복원 상태](RESTORATION_STATUS.md)를 읽으세요. 이 실험 패키지는 기존 `starter-rag`와 별도 설치·실행 경로를 사용합니다. 기본 `SearchPort`, 운영 인덱스, 기존 `starter-rag search` 동작은 변경하지 않습니다.
 
 ## 고정 비교군 이름
 
