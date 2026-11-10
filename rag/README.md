@@ -1,7 +1,9 @@
-<!-- 책임: [D] RAG 독립 CLI와 Parser·청킹·pgvector 사용법을 안내한다.
+<!-- 책임: [실험 도구] 승인된 실험·검증에 사용하는 RAG CLI와 Parser·청킹·pgvector 사용법을 안내한다.
 구현할 기능: 명령별 용도, 실행 조건, 데이터베이스 영향과 모델 설정을 기록한다.
-완료 기준: 검증·파싱·색인·게시·검색·평가 CLI 흐름을 재현할 수 있다. -->
-# RAG CLI 사용 설명서
+완료 기준: 보고서의 재현 조건을 확인한 뒤 허용된 CLI 흐름을 실행할 수 있다. -->
+# RAG 실험 실행 CLI 안내서
+
+이 저장소의 주요 산출물은 [실험 보고서](experiments/search_methods/EXPERIMENT_REPORT.md)와 집계 결과입니다. 이 문서는 실험을 지원하는 RAG 도구의 설치·실행 설명서이며, 보고서의 측정 결과나 운영 승인으로 해석하지 않습니다. 색인·게시·DB 변경과 전체 검색 실험은 명시적으로 승인된 입력 및 대상에서만 실행합니다.
 
 ## RAG 단독 설치·배포 경로
 
@@ -10,7 +12,7 @@ RAG는 Backend 없이 `rag/pyproject.toml`만으로 설치할 수 있는 CLI 패
 설치합니다.
 
 ```bash
-cd /path/to/starter-kit/rag
+cd /path/to/repository/rag
 uv venv .venv
 uv pip install --python .venv/bin/python ".[ingestion]"
 .venv/bin/starter-rag status
@@ -75,7 +77,7 @@ uv run --project rag --locked starter-rag status
 독립 설치를 선택하면 `rag/`에서 별도 가상환경에 설치합니다.
 
 ```bash
-cd /path/to/starter-kit/rag
+cd /path/to/repository/rag
 uv venv .venv
 uv pip install --python .venv/bin/python ".[ingestion]"
 .venv/bin/starter-rag status
