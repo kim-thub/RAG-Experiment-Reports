@@ -1329,7 +1329,7 @@ async def chunk_document(
             row = _table_row_metadata(element, table_id, row_index)
             row_text = _table_row_text(table, row)
             if _keeps_xlsx_rows_whole(structure.source_format):
-                # 상속길잡이 XLSX는 한 행이 한 정보이므로 행 경계를 유지한다.
+                # XLSX 행은 독립 레코드로 취급해 행 경계를 유지한다.
                 row_pieces = ((row_text, 0, len(row_text)),)
             else:
                 row_pieces = _split_text_by_token_limit(
