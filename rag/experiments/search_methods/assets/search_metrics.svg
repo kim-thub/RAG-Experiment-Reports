@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 665" role="img" aria-labelledby="title description">
+  <title id="title">검색 방식별 Hit@k와 MRR@10</title>
+  <desc id="description">29문항 Silver Set. 사용자 제공 이전 집계의 Dense V0와 JSON Schema 최종 집계의 V1, H1, G1을 비교한다. G1은 2,100개 중 120개 청크의 부분 그래프 파일럿이며 V1/H1 Top10을 그래프 입력 선택과 검색 시드에 사용했다. H1은 Hit@5와 Hit@10이 가장 높고 V1은 Hit@3과 MRR@10이 가장 높다.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #202938; }
+    .title { font-size: 25px; font-weight: 700; }
+    .subtitle { font-size: 13px; fill: #596579; }
+    .section { font-size: 17px; font-weight: 650; }
+    .label { font-size: 14px; }
+    .small { font-size: 12px; fill: #596579; }
+    .value { font-size: 12px; font-weight: 650; }
+    .grid { stroke: #dce2ea; stroke-width: 1; }
+    .axis { stroke: #8893a4; stroke-width: 1.2; }
+  </style>
+  <rect width="1000" height="665" rx="18" fill="#ffffff"/>
+  <text x="40" y="45" class="title">검색 방식별 지표</text>
+  <text x="40" y="69" class="subtitle">Silver Set · 29문항 · V0: 사용자 제공 이전 집계 · V1/H1/G1: JSON Schema 최종 집계</text>
+
+  <rect x="595" y="31" width="12" height="12" rx="2" fill="#5076b8"/>
+  <text x="613" y="42" class="small">Hit@3</text>
+  <rect x="683" y="31" width="12" height="12" rx="2" fill="#32927e"/>
+  <text x="701" y="42" class="small">Hit@5</text>
+  <rect x="771" y="31" width="12" height="12" rx="2" fill="#d28a35"/>
+  <text x="789" y="42" class="small">Hit@10</text>
+  <rect x="876" y="31" width="12" height="12" rx="2" fill="#8064a8"/>
+  <text x="894" y="42" class="small">MRR@10</text>
+
+  <text x="40" y="105" class="section">Hit rate</text>
+  <text x="40" y="149" class="label">V0 · Dense</text>
+  <text x="40" y="224" class="label">V1 · 재정렬</text>
+  <text x="40" y="299" class="label">H1 · Hybrid</text>
+  <text x="40" y="374" class="label">G1* · 경량 그래프</text>
+
+  <line x1="260" y1="112" x2="260" y2="400" class="axis"/>
+  <line x1="400" y1="112" x2="400" y2="400" class="grid"/>
+  <line x1="540" y1="112" x2="540" y2="400" class="grid"/>
+  <line x1="680" y1="112" x2="680" y2="400" class="grid"/>
+  <line x1="820" y1="112" x2="820" y2="400" class="grid"/>
+
+  <rect x="260" y="130" width="463.7" height="12" rx="4" fill="#5076b8"/>
+  <rect x="260" y="145" width="482.7" height="12" rx="4" fill="#32927e"/>
+  <rect x="260" y="160" width="521.4" height="12" rx="4" fill="#d28a35"/>
+  <text x="731" y="140" class="value">0.828</text>
+  <text x="750" y="155" class="value">0.862</text>
+  <text x="789" y="170" class="value">0.931</text>
+
+  <rect x="260" y="205" width="482.7" height="12" rx="4" fill="#5076b8"/>
+  <rect x="260" y="220" width="502.3" height="12" rx="4" fill="#32927e"/>
+  <rect x="260" y="235" width="521.4" height="12" rx="4" fill="#d28a35"/>
+  <text x="750" y="215" class="value">0.862</text>
+  <text x="770" y="230" class="value">0.897</text>
+  <text x="789" y="245" class="value">0.931</text>
+
+  <rect x="260" y="280" width="463.7" height="12" rx="4" fill="#5076b8"/>
+  <rect x="260" y="295" width="541.0" height="12" rx="4" fill="#32927e"/>
+  <rect x="260" y="310" width="541.0" height="12" rx="4" fill="#d28a35"/>
+  <text x="731" y="290" class="value">0.828</text>
+  <text x="809" y="305" class="value">0.966</text>
+  <text x="809" y="320" class="value">0.966</text>
+
+  <rect x="260" y="355" width="425.0" height="12" rx="4" fill="#5076b8"/>
+  <rect x="260" y="370" width="463.7" height="12" rx="4" fill="#32927e"/>
+  <rect x="260" y="385" width="502.3" height="12" rx="4" fill="#d28a35"/>
+  <text x="693" y="365" class="value">0.759</text>
+  <text x="731" y="380" class="value">0.828</text>
+  <text x="770" y="395" class="value">0.897</text>
+
+  <line x1="260" y1="407" x2="820" y2="407" class="axis"/>
+  <text x="255" y="425" class="small">0</text>
+  <text x="390" y="425" class="small">0.25</text>
+  <text x="531" y="425" class="small">0.50</text>
+  <text x="671" y="425" class="small">0.75</text>
+  <text x="811" y="425" class="small">1.00</text>
+
+  <text x="40" y="463" class="section">MRR@10</text>
+  <text x="40" y="495" class="label">V0 · Dense</text>
+  <text x="40" y="527" class="label">V1 · 재정렬</text>
+  <text x="40" y="559" class="label">H1 · Hybrid</text>
+  <text x="40" y="591" class="label">G1* · 경량 그래프</text>
+  <line x1="260" y1="470" x2="260" y2="605" class="axis"/>
+  <line x1="400" y1="470" x2="400" y2="605" class="grid"/>
+  <line x1="540" y1="470" x2="540" y2="605" class="grid"/>
+  <line x1="680" y1="470" x2="680" y2="605" class="grid"/>
+  <line x1="820" y1="470" x2="820" y2="605" class="grid"/>
+  <rect x="260" y="483" width="424.5" height="15" rx="5" fill="#8064a8"/>
+  <rect x="260" y="515" width="471.5" height="15" rx="5" fill="#8064a8"/>
+  <rect x="260" y="547" width="467.0" height="15" rx="5" fill="#8064a8"/>
+  <rect x="260" y="579" width="346.6" height="15" rx="5" fill="#8064a8"/>
+  <text x="692" y="495" class="value">0.758</text>
+  <text x="739" y="527" class="value">0.842</text>
+  <text x="735" y="559" class="value">0.834</text>
+  <text x="614" y="591" class="value">0.619</text>
+  <line x1="260" y1="612" x2="820" y2="612" class="axis"/>
+  <text x="255" y="630" class="small">0</text>
+  <text x="390" y="630" class="small">0.25</text>
+  <text x="531" y="630" class="small">0.50</text>
+  <text x="671" y="630" class="small">0.75</text>
+  <text x="811" y="630" class="small">1.00</text>
+  <text x="40" y="652" class="small">* G1: 120/2,100 청크 부분 그래프; V1/H1 Top10을 입력 선택과 검색 시드에 사용.</text>
+</svg>
