@@ -58,7 +58,7 @@ flowchart LR
     C --> V0
     C --> V1
     C --> H1
-    V0 --> E[Hit@k · MRR@10]
+    V0 --> E["Hit@k · MRR@10"]
     V1 --> E
     H1 --> E
     V1 --> P[V1/H1 Top10으로 G1 입력·시드 선택]
